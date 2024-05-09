@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Landing Page</title>
+    <style>
+         
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .subtitle {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 10px;
+        }    
+        .logo img {
+            height: 50px;
+            width: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        * {
+        box-sizing: border-box;
+        }
+
+        .w-third {
+            float:left ;
+            width: 5%;
+            padding: 20px;
+        }
+
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/shop.png" alt="Logo">
+        </div>    
+        <nav>
+            <ul>
+                <li><a href="#home" style="font-family: cursive;">Home</a></li>
+                <li><a href="#about" style="font-family: cursive;">About</a></li>
+                <li><a href="#products" style="font-family: cursive;">Products</a></li>
+                <li><a href="#services" style="font-family: cursive;">Services</a></li>
+                <li><a href="#contect" style="font-family: cursive;">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header style="background-color: #ffffff; color: #090000; padding: 10px; text-align: center;">
+        <h1><a href="#" style="font-family:cursive; text-decoration: none;">Welcome to Shop</a></h1>
+        <nav>
+            <a href="#" style="color: #010000; text-decoration: none; margin: 0 10px; font-family: cursive;">Profile</a>
+            <a href="#" style="color: #070000; text-decoration: none; margin: 0 10px; font-family: cursive;">Wishlist</a>
+            <a href="#" style="color: #000000; text-decoration: none; margin: 0 10px; font-family: cursive;">Bag</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <img class="mySlides" src="Images/watch.jpg"
+        style="width:100%; height:100%;">
+        <img class="mySlides" src="Images/shoe.jpg"
+        style="width:100%">
+        <img class="mySlides" src="Images/shert.jpg"
+        style="width:100%">
+    </section>
+
+    <header style="background-color: #333; padding: 5px;"></header>
+    <header style="background-color: #2fcfe7; color: #fff; padding: 8px;">
+        *<h1>100% ORIGINAL Product</h1>
+        *<h1> EASY RETURNS REFUNDS</h1>
+        *<h1> 100% SECURE PAYMENTS</h1>
+        
+    </header>
+
+    <header class="subtile" style="background-color: #333;  padding: 5px;">
+    </header>
+
+    <section class="w-row-padding w-center w-light-grey">
+            <img src="Images/vertical-shot.jpg" alt="Random Name" style="width:50%">
+            <h3>Men's shert</h3>
+          
+    </section>
+
+      
+      <header style="background-color: #333; padding: 30px;"></header>
+      
+    <section style="padding-top:10px ;">
+        <br/><h2 style="text-align: center;">About Us</h2>
+        <p style="margin-bottom: 20px;"><h2 style="text-align: center;"></h2><br>The Quality product for you, Shop with us </p>
+    </section>
+
+    <section style="background-color: #b4aeae; padding: 15px;">
+        <h2>Our Services</h2>
+        <ul style="list-style: none; padding: 0px;">
+            <li style="margin-bottom: 10px;"></li>
+            <li style="margin-bottom: 10px;">Online payment</li>
+            <li>Online shopping</li>
+        </ul>
+    </section>
+
+    <section style="padding: 10px;">
+        <h2>Contact Us</h2>
+        <p style="margin-bottom: 10px;">Email: shop@gmail.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0;">
+        <p>&copy; 2024 Shop. All rights reserved.</p>
+    </footer>  
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+</html>
